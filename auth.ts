@@ -50,7 +50,7 @@ export const { auth, signIn, signOut } = NextAuth({
             token = password
             usr = { email }
           }
-          if (usr) {
+          if (usr && token) {
             cookies().set({
               name: 'bytoken',
               value: token,

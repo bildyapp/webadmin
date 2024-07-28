@@ -28,7 +28,7 @@ async function createUser(formData: FormData): Promise<User | undefined> {
 export async function register(
   prevState: string | undefined,
   formData: FormData,
-) {
+): Promise<any> {
   try {
     const user = await createUser(formData);
     console.log(user)
